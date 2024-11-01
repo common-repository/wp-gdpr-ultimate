@@ -1,0 +1,170 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ h4.ui-pnotify-title {
+     font-size: 14px !important;
+     font-weight: bold !important;
+ }
+ *, *:before, *:after {
+   	-webkit-box-sizing:border-box;
+ 	  -moz-box-sizing:border-box;
+ 	  box-sizing:border-box;
+ }
+
+ li.error {
+    list-style: none !important;
+    list-style-type: none !important;
+}
+
+ .gdprcontainer input, select, .gdprcontainer input[type="checkbox"], input[type="radio"] {
+     -webkit-border-radius:0;
+     -webkit-appearance:none;
+     outline:none;
+ }
+
+ input#checkbox1 {
+     position: absolute;
+     z-index: 999999;
+ }
+
+ .wrap {
+   font-size:1.2em;
+   max-width: 100%;
+   	@media screen and (
+   max-width: 460px) {
+       padding:0.5em;
+   }
+ }
+
+ .gdprcontainer li {
+   margin-bottom: 0.2em;
+   padding-left: 0;
+   position:relative;
+ }
+
+ .gdprcontainer input[type="checkbox"],
+ .gdprcontainer input[type="radio"],
+ .gdprcontainer li label::before {
+ 	  cursor:pointer;
+ 	  height:20px;
+ 	  left:0;
+ 	  /* margin-top:-20px; */
+ 	  position: relative;
+ 	  width: auto;
+ 	  /* top:90%; */
+ 	  display: inline-block;
+ 	  margin-right:  10px;
+ 	  min-width:  20px;
+ }
+
+ .gdprcontainer input[type="checkbox"],
+ .gdprcontainer input[type="radio"] {
+ 	  display:inline-block;
+ 	  opacity:0;
+ 	  vertical-align:middle;
+ }
+
+ .gdprcontainer li label::before {
+ 	  border: 2px solid #3a677c;
+ 	  border-radius:4px !important;
+ 	  color: #258c72;
+ 	  content:'';
+ 	  font-size: 1.5em !important;
+ 	  padding:0 0 0 0;
+ }
+
+ .gdprcontainer .error + label::before{
+ 	  border-color:#f93337;
+ }
+
+ .gdprcontainer li input[type="checkbox"]:checked + label::before {
+   	border-color:darken(#48CFAD, 20%);
+ 	  content:'\2714';
+ }
+
+ .gdprcontainer li input[type="radio"] + label::before {
+ 	  border-radius:50%;
+ }
+
+ .gdprcontainer li input[type="radio"]:checked + label::before {
+   	border-color:darken(#48CFAD, 20%);
+   	content:'\25CF';
+   	font-size:1.5em;
+   	padding:0 0 0 .3em;
+ }
+
+ .gdprcontainer label {
+   	display: block;
+   	width:100%;
+ }
+ 
+.ui-pnotify-text a {
+    font-weight: 500;
+}
+
+ .gdprcontainer ul {
+     margin-bottom: 0.5em !important;
+     overflow: hidden;
+     margin-left: 0 !important;
+     margin-top: 0.5em !important;
+ }
+
+ .gdprcontainer li label {
+ 	  display: flex;
+ 	  vertical-align:top;
+ 	  font-size: 0.8em;
+ 	  line-height:  120%;
+ }
+
+.gdprcontainer a {
+    font-size: 0.8em;
+    color: #6466bd;
+    position: relative;
+    bottom: 5px;
+}
+
+.gdprcontainer > ul:nth-child(2) > li > li{
+     background:#f93337;
+     border-radius:4px;
+     color:#FFF;
+     font-size:.8em;
+     list-style-type:square;
+     margin-bottom:1em;
+     padding:1em;
+ }
+
+
+
+  .gdprcontainer .error li {
+ 	  margin-left:1em;
+   margin-bottom:.5em;
+   padding-left:0;
+ }
+
+ .gdprcontainer ul.error input[type="checkbox"] + label::before,
+ .gdprcontainer ul.error input[type="radio"] + label::before {
+   	border-color:#F93337;
+ }
+
+ .gdprcontainer ul.error input[type="checkbox"] + label,
+ .gdprcontainer ul.error input[type="radio"] + label {
+ 	  color:#F93337;
+ }
+
+ .gdprcontainer li {
+ 	  float:left;
+ 	  width: 100%;
+ 	  &:first-of-type {
+ 	  margin-right:1%;
+ 	  width:48%;
+ 	  }
+   	@media screen and (
+ 	  max-width:460px) {
+ 		    width:100%;
+ 		    &:first-of-type {
+ 	  margin-right:0;
+ 	  width:100%;
+ 		    }
+   	}
+ }

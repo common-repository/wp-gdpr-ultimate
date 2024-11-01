@@ -1,0 +1,25 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .label-info {
+     background-color: #5bc0de;
+     text-align: center !important;
+     display: block;
+     float: left;
+     width: auto;
+     padding: 0 15px !important;
+     font-size: 8pt !important;
+ }
+ .xbox-field.xbox-field-id-excludeformbyid input , .xbox-field.xbox-field-id-excludeformbyclass input{
+    border-radius: 0px !important;
+    border: 1px solid #CAD0D9 !important;
+    border-top-width: 1px !important;
+    border-top-style: solid !important;
+    border-top-color: #CAD0D9 !important;
+    border-top: none !important;
+ }
+
+ #xbox-wp-gdpr-ultimate > div.xbox-tab.xbox-main-tab.xbox-tab-left.tab-main-tab.xbox-tab-dark.is-tab.xbox-tabs.xbox-tabs-initialized > div.xbox-tab-body > div.xbox-tab-content.tab-content-privacy > div > div.xbox-content.xbox-clearfix > div > div > select > option:nth-child(1) {
+     display: none;
+ }
